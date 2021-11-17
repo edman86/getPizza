@@ -23,7 +23,7 @@ function App() {
 
         // fetching data
         dispatch(fetchProducts('pizza', currentCategoryFilter, currentSortType.name, currentSortType.direction));
-        dispatch(fetchProducts('snacks', null, null));
+        
     }, [currentCategoryFilter, currentSortType]);
 
     return (

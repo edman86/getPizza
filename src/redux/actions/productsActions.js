@@ -6,11 +6,6 @@ export const setPizzas = (pizzas) => ({
     payload: pizzas
 });
 
-export const setSnacks = (snacks) => ({
-    type: 'SET_SNACKS',
-    payload: snacks
-});
-
 export const setLoaded = (isLoaded) => ({
     type: 'SET_LOADED',
     payload: isLoaded
@@ -34,15 +29,7 @@ export const fetchProducts = (product, filterCategory, orderByValue, dir) => (di
 
             const data = await getDocs(q);
             dispatch(setPizzas(data.docs.map(doc => ({ ...doc.data(), id: doc.id }))));
-        
-        } else if (product === 'snacks') {
-            
-            // getting product reference from firestore
-            // product - must be the name of the collection in firebase
-            const productCollectionRef = collection(db, product);
-            const data = await getDocs(productCollectionRef);
-            dispatch(setSnacks(data.docs.map(doc => ({ ...doc.data(), id: doc.id }))));
-        }
+        } 
 
         // sets isLoaded to true for display product cards
         dispatch(setLoaded(true));

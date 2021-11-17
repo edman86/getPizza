@@ -29,7 +29,6 @@ const MainPage = () => {
     
     // get data from redux for spreading to child components
     const pizzas = useSelector(state => state.products.pizzas);
-    const snacks = useSelector(state => state.products.snacks);
     const isLoaded = useSelector(state => state.products.isLoaded);
     
     return (
