@@ -3,7 +3,7 @@ import { getFirestore } from '@firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA5HM0VNwtb68kGmItTGaKGojXB9-xD-bw",
+  apiKey: process.env.GET_PIZZA_API_KEY,
   authDomain: "getpizza-99e08.firebaseapp.com",
   projectId: "getpizza-99e08",
   storageBucket: "getpizza-99e08.appspot.com",
