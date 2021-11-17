@@ -1,0 +1,56 @@
+@import '../../variables';
+
+.btn {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: $btn-standart-clr;
+    color: $subtitle-clr;
+    cursor: pointer;
+    border-radius: .4em;
+    outline: none;
+    transition: background-color .1s linear;
+
+    &:hover {
+        background-color: $btn-standart-hover-clr;
+    }
+}
+
+.contained {
+    background-color: $primary-clr;
+    color: #fff;
+
+    &:hover {
+        background-color: $primary-hover-clr;
+    }
+
+    &:active {
+        background-color: $active-btn-clr;
+    }
+}
+
+.outlined {
+    color: $primary-hover-clr;
+    border: 1px solid $primary-clr;
+    background-color: transparent;
+
+    &:hover {
+        background-color: $primary-clr;
+        color: #fff;
+    }
+}
+
+.rounded {
+    border-radius: 1.5em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

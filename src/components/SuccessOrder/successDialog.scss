@@ -1,0 +1,52 @@
+@import '../../variables';
+
+.success-dialog {
+    will-change: transform, opacity;
+    max-width: 1000px;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(30,35,90,0.4);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+    overflow: hidden;
+
+    &__close-btn {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        size: 1rem;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: color .1s linear;
+
+        &:hover {
+            color: $primary-hover-clr;
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        font-size: 2rem;
+        text-align: center;
+        color: $primary-clr;
+    }
+
+    &__image {
+        display: block;
+        height: 50%;
+    }
+}    

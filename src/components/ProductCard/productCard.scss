@@ -1,0 +1,104 @@
+@import '../../variables';
+
+.card {
+    min-height: 474px;
+    overflow: hidden;
+    box-shadow: 0 1px 2.5px 0 rgba(30,35,90,0.4);
+    border-radius: 0.3em;
+
+    &:hover .card__image {
+        transform: translateY(5px);
+    }
+
+    &__image-container {
+        width: 100%;
+        height: 200px;
+        margin-top: 0.5em;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image {
+        display: block;
+        max-height: 200px;
+        transition: transform 0.2s linear;
+    }
+    
+    &__rating {
+        padding: 0 1rem;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__rating-star {
+        color: $primary-clr;
+        margin-right: 0.5rem;
+    }
+
+    &__rating-label {
+        font-size: 1rem;
+        color: $primary-clr;
+    }
+
+    &__title {
+        padding: 0 1rem;
+        margin: 0;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    &__content {
+        min-height: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__description {
+        padding: 0 1rem;
+        margin: 0.5rem 0 0.5rem;
+        font-size: 1rem;
+        color: $subtitle-clr;
+    }
+
+    &__categories {
+        padding: 0 1rem;
+        margin: auto 0 0;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    &__category-item {
+        font-size: 0.8rem;
+        text-transform: lowercase;
+        padding: 0.3em 1em;
+        background-color: $btn-standart-hover-clr;
+        color: $subtitle-clr;
+        border-radius: 1.5em;
+        margin-right: 0.5em;
+        margin-bottom: 0.2em;
+        transition: background-color .1s linear;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__footer {
+        padding: 0 1rem 0.5rem;
+        margin: 0.2rem 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__price {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}

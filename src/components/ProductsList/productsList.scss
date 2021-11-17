@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.products {
+    margin-bottom: 1em;
+
+    &__header {
+        background-color: $secondary-clr;
+        margin-bottom: 1em;
+    }
+    
+    &__title {
+        width: 100%;
+        font-size: 1.2rem;
+        color: $primary-clr;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        font-weight: 400;
+        text-align: center;
+        padding: 0.1em 0;
+        margin: 0;
+    }
+}
+
+.filters {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+        display: block;
+    }
+}

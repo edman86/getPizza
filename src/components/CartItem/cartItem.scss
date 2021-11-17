@@ -1,0 +1,91 @@
+@import '../../variables';
+
+.cart-item {
+    max-width: 900px;
+    width: 100%;
+    margin: 0.5rem 2rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2.5px 0 rgba(30,35,90,0.4);
+    border-radius: 0.3em;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    &__image-container {
+        // width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image {
+        display: block;
+        height: 100%;
+    }
+
+    &__title {
+        text-transform: capitalize;
+    }
+
+    &__size {
+        font-size: 1.1rem;  
+    }
+
+    &__dough {
+        font-size: 1.1rem;
+    }
+
+    &__counter {
+        max-width: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .counter-btn {
+            width: 40px;
+            height: 40px;
+            padding: 0.5em;
+            border: none;
+            color: $subtitle-clr;
+            outline: none;
+            background-color: $secondary-clr;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background-color .1s linear, color .1s linear;
+
+            &:hover {
+                color: $primary-hover-clr;
+                background-color: $secondary-hover-clr;
+            }
+        }
+
+        .counter-label {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #000;
+        }
+    }
+    
+    &__remove {
+        size: 1rem;
+        border: none;
+        color: $text-light-clr;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: color .1s linear;
+
+        &:hover {
+            color: $primary-hover-clr;
+        }
+    }
+
+    @media screen and (min-width: 940px) {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,53 @@
+@import '../../variables';
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &__item {
+        font-family: inherit;
+        font-size: 1rem;
+        padding: 0.5em 1em;
+        border: none;
+        background-color: $btn-standart-clr;
+        color: $subtitle-clr;
+        cursor: pointer;
+        border-radius: 1.5em;
+        outline: none;
+        transition: background-color .1s linear;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+
+        &:hover {
+            background-color: $btn-standart-hover-clr;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &__item {
+            margin-bottom: 0; 
+        }
+    }
+}
+
+.selected-category {
+    background-color: rgb(97, 98, 102);
+    color: #fff;
+
+    &:hover {
+        background-color: rgb(97, 98, 102);
+    }
+}

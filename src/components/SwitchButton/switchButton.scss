@@ -1,0 +1,40 @@
+@import '../../variables';
+
+.switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 2em; 
+    background-color: $btn-standart-clr;
+
+    &__radio {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    &__label {
+        width: 100px;
+        text-align: center;
+        color: $text-light-clr;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+
+    &__slider {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 85%;
+        border-radius: 2em;
+        background-color: #fff;
+        transition: all .4s;
+        box-shadow: 0 0 10px rgb(167, 174, 187);
+    }
+}

@@ -1,0 +1,82 @@
+@import '../../variables';
+
+.sort-dialog-item .selector {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-bottom: 0.5em;
+
+    &:hover {
+        color: $primary-hover-clr;
+    }
+
+    .label {
+        display: block;
+        font-size: 1.2rem;
+        width: 100%;
+
+        &:hover ~ .icon {
+            color: $primary-hover-clr;
+        }
+    }
+
+    .icon {
+        display: block;
+        color: $text-light-clr;
+        font-size: 1.5rem;
+        padding: 0 0.5em 0 0;
+        border-radius: 50%;
+
+        &:hover {
+            color: $primary-hover-clr;
+        }
+    }
+}
+
+.sort-dialog-item .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s linear, opacity 0.5s linear;
+    opacity: 0;
+
+    &.opened {
+        max-height: 150px;
+        opacity: 1;
+    }
+}
+
+.option {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: $secondary-clr;
+    color: $primary-hover-clr;
+    cursor: pointer;
+    border-radius: 1.5em;
+    outline: none;
+    transition: background-color .1s linear;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+
+    &:hover {
+        background-color: $secondary-hover-clr;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.selected-option {
+    background-color: $primary-clr;
+    color: #fff;
+
+    &:hover {
+        background-color: $primary-clr;
+    }
+}

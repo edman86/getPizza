@@ -1,0 +1,103 @@
+@import '../../variables';
+@import '../../animation';
+
+.cart {
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 150px;
+
+        @media screen and (min-width: 768px) {
+            padding-bottom: 100px;
+        }
+    }
+
+    &__header {
+        background-color: $secondary-clr;
+        margin: 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.2rem;
+        color: $primary-clr;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        font-weight: 400;
+        padding: 0.1em 0;
+        margin: 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__footer {
+        width: 100%;
+        background-color: $secondary-clr;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        animation: bounce-bottom 0.7s both;
+        padding: 1rem 0;
+    }
+
+    &__payment {
+        max-width: 900px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    &__total {
+        font-size: 1.7rem;
+        margin: 0;
+        
+        .total-label {
+            font-weight: bold;
+        }
+
+        .total-info {
+            margin-left: 0.4em;
+            font-weight: normal;
+        }
+
+        .total-price {
+            font-weight: bold;
+        }
+    }
+    
+    &__order-btn {
+        font-family: inherit;
+        font-size: 1.5rem;
+        padding: 0.5em 1em;
+        border: none;
+        outline: none;
+        background-color: $primary-clr;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 1.5em;
+        text-transform: capitalize;
+        margin-top: 1rem;
+        transition: background-color .1s linear;
+
+        &:hover {
+            background-color: $primary-hover-clr;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+    }
+}

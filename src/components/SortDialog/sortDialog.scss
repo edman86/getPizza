@@ -1,0 +1,50 @@
+@import '../../variables';
+@import '../../animation';
+
+.sort-dialog {
+    width: 210px;
+    position: relative;
+    z-index: 1;
+
+    &__btn {
+        font-size: 1.2rem;
+        color: $subtitle-clr;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        cursor: pointer;
+        
+        &:hover .btn-label {
+            color: $primary-hover-clr;
+        }
+
+        .btn-label {
+            font-size: 1.2rem;
+            color: $primary-clr;
+        }
+    }
+
+    &__dropdown-list {
+        max-width: 250px;
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: 0 1.5px 4px 0 rgba(30,35,90,0.4);
+        border-radius: 0.3em;
+        margin: 0;
+        position: absolute;
+        top: 2em;
+        padding: 1em;
+        animation: fadeIn 0.2s ease-in-out;
+        display: none;
+
+        &.is-open {
+            display: block;
+        }
+    }
+
+    
+
+    &__arrow {
+        color: $primary-clr;
+    }
+}
