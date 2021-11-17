@@ -8,6 +8,8 @@
 
 ### For the backend of the application used Firebase.
 
+### The application is fully responsive
+
 ## Stack
 
 ### `React`
