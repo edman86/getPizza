@@ -8,7 +8,7 @@
 
 ### For the backend of the application used Firebase.
 
-### The application is fully responsive
+### The application is fully responsive with mobile first approach.
 
 ## Stack
 
