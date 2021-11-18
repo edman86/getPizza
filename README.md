@@ -2,13 +2,19 @@
 
 ## Application for ordering pizza.
 
-### All application components, styles and animations are written from scratch, without any use of third-party UI libraries or frameworks.
+### All components, styles and animations of the application are made from scratch, without any use of third-party UI libraries or frameworks
 
-### The SASS preprocessor was used for the styles.
+### Styles are made using SASS preprocessor and BEM methodology
 
-### For the backend of the application used Firebase.
+### State of the application is managing by using Redux
 
-### The application is fully responsive with mobile first approach.
+### For asynchronous requests is using Redux Thunk
+
+### To implement dynamic routing in the app is using React Router
+
+### For the backend of the application is using Firebase
+
+### The application is fully responsive with "mobile first" approach
 
 ## Stack
 
